@@ -139,19 +139,19 @@ const ContactForm: React.FC = () => {
                   />
                 ))}
             </FormGroup>
-            <ButtonPhone onClick={(e) => handlePhoneCount(e)}>
+            <ButtonPhone aria-label='add number' onClick={(e) => handlePhoneCount(e)}>
               Add another number
             </ButtonPhone>
-            <Button onClick={() => handleEndButton("false")}>
+            <Button aria-label='close' onClick={() => handleEndButton("false")}>
               Close
             </Button>
-            <Button onClick={(e) => handleSubmit(e)}>
+            <Button aria-label='submit' onClick={(e) => handleSubmit(e)}>
               Submit
             </Button>
           </FormInner>
         </FormWrapper>
       )}
-      <Button onClick={() => handleEndButton("true")}>
+      <Button aria-label='add new contact' onClick={() => handleEndButton("true")}>
         Add Contact
       </Button>
     </Wrapper>

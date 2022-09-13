@@ -69,13 +69,13 @@ const Pagination: React.FC = () => {
   return (
     <PageWrapper>
       <Inner>
-        <Button onClick={prevPage}>
+        <Button id="left" aria-label="left" onClick={prevPage}>
           <Left />
         </Button>
           {currPage}
         <p>of</p>
           {totalPage}
-        <Button onClick={nextPage}>
+        <Button id="right" aria-label="right" onClick={nextPage}>
           <Right />
         </Button>
       </Inner>
