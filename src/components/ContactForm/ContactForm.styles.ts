@@ -96,7 +96,7 @@ export const Button = styled.button`
   border: none;
   border-radius: 5px;
   background-color: #fff ;
-  color: #fff;
+  color: #000;
   padding: 0.25rem 0.5rem;
   place-self: center ;
   cursor: pointer;
